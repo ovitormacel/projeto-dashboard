@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Painel</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="align">
+            <a href="index.html" class="logo"><h3>Painel</h3></a>
+
+            <nav class="header_nav_list">
+                <ul>
+                    <li><a href="#" class="active"><i class="fa-solid fa-chart-line"></i><p>Dashboard</p></a></li>
+                    <li><a href="#"><i class="fa-solid fa-warehouse"></i><p>Estoque</p></a></li>
+                    <li><a href="#"><i class="fa-solid fa-piggy-bank"></i><p>Abrir Venda</p></a></li>
+                    <li><a href="#"><i class="fa-solid fa-user"></i><p>Clientes</p></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="dashboard_main">
+        <h4>Dashboard</h4>
+
+        <section class="cards_info">
+            <article class="card money">
+                <span class="card_icon"><i class="fa-solid fa-dollar-sign"></i></span>
+                <div class="card_infos">
+                    <p>Lucro Total</p>
+                    <h4>$ 53,520.00</h4>
+                </div>
+            </article>
+
+            <article class="card sales">
+                <span class="card_icon"><i class="fa-solid fa-cart-arrow-down"></i></span>
+                <div class="card_infos">
+                    <p>Total de Vendas</p>
+                    <h4>5350</h4>
+                </div>
+            </article>
+
+            <article class="card inventory">
+                <span class="card_icon"><i class="fa-solid fa-warehouse"></i></span>
+                <div class="card_infos">
+                    <p>Itens em Estoque</p>
+                    <h4>340</h4>
+                </div>
+            </article>
+
+            <article class="card clients">
+                <span class="card_icon"><i class="fa-solid fa-user"></i></span>
+                <div class="card_infos">
+                    <p>Total de Clientes</p>
+                    <h4>25</h4>
+                </div>
+            </article>
+        </section>
+    </main>
+    
+    <script src="https://kit.fontawesome.com/3bb5c1e371.js" crossorigin="anonymous"></script>
+</body>
+</html>
