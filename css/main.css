@@ -141,3 +141,100 @@ body{
     color: #E28413;
     font-size: 2.5em;
 }
+
+
+
+
+
+/* ---- GRÁFICO ---- */
+
+.grafico_vendas{
+    width: 450px;
+    height: 300px;
+    margin-top: 0px;
+    padding: 15px 15px 5px 0px;
+    border-radius: 10px;
+
+    box-shadow: 0 0 5px #a5aaaa;
+    
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+}
+
+.grafico_vendas .area_grafico{
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+
+    grid-column: 2 / -1;
+    grid-row: 1 / 6;
+}
+
+.escala_y{
+    border-right: 1px solid #a5aaaa;
+
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    grid-row: 1 / 6;
+}
+
+.scale{
+    background-color: #f0f6f6;
+    font-size: 12px;
+    font-weight: 300;
+    padding: 3px;
+    text-align: center;
+}
+
+.escala_x{
+    border-top: 1px solid #a5aaaa;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    grid-row: 6 / 7;
+    grid-column: 2 / -1;
+}
+
+.escala_x .item{
+    font-size: 12px;
+}
+
+.column {
+    background-color: #21a179;
+    width: 20px;
+
+    border-radius: 5px 5px 0 0;
+}
+
+.column.um{
+    background-color: #21a179;
+    height: 85%;
+}
+.column.dois{
+    background-color: #454ADE;
+    height: 70%;
+}
+.column.tres{
+    background-color: #E28413;
+    height: 45%;
+}
+.column.quatro{
+    background-color: #CC3752;
+    height: 40%;
+}
+.column.cinco{
+    background-color: #333333;
+    height: 20%;
+}
+
+
+
+.col_analytics h4{
+    margin-top: 30px;
+}
