@@ -1,0 +1,140 @@
+.cards_info{
+    margin-bottom: 30px;
+}
+
+.table_vendas{
+    height: 58vh;
+    width: 100%;
+    margin-top: 0px;
+
+    overflow-y: scroll;
+}
+
+.btn_create{
+    padding: 5px 25px;
+    text-align: center;
+    font-size: 16px;
+    background-color: #29c996;
+    border-radius: 8px;
+    border: none;
+    color: #f6f0f0;
+
+    transition: .2s linear;
+}
+.btn_create:hover{
+    transform: scale(1.2, 1.2);
+    cursor: pointer;
+}
+
+.btn_edit{
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 14px;
+    background-color: #E28413;
+    border-radius: 8px;
+    border: none;
+    color: #f6f0f0;
+
+    transition: .2s linear;
+}
+.btn_edit:hover{
+    transform: scale(1.1, 1.1);
+    cursor: pointer;
+}
+
+.btn_delete{
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 14px;
+    background-color: #c72b2b;
+    border-radius: 8px;
+    border: none;
+    color: #f6f0f0;
+
+    transition: .2s linear;
+}
+.btn_delete:hover{
+    transform: scale(1.1, 1.1);
+    cursor: pointer;
+}
+
+.additem{
+    background-color: rgba(0, 0, 0, .5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    display: none;
+    overflow: hidden;
+}
+.additem.opened {
+    display: block;
+}
+
+.additem_box{
+    height: 200px;
+    width: 400px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -100px 0 0 -200px;
+
+    background-color: #f6f0f0;
+}
+
+.additem_box h4{
+    text-align: center;
+    padding-top: 5px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    color: #333333;
+}
+
+.additem_form{
+    
+    height: 430px;
+    width: 350px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(7, 40px);
+    grid-template-rows: repeat(3, 50px);
+
+    gap: 10px;
+}
+.additem_form label{
+    display: none;
+}
+
+.additem_form .input{
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #c2c2c2;
+    background-color: white;
+    font-size: 14px;
+    padding-left: 5px;
+}
+.additem_form .cod{
+    grid-column: 1 / 3;
+}
+
+.additem_form .descricao{
+    grid-column: 3 / -1;
+}
+
+.additem_form .qntd{
+    grid-column: 1 / 3;
+}
+
+.additem_form .preco{
+    grid-column: 3 / 5;
+}
+
+.additem_form .btn_create{
+    grid-column: 5 / -1;
+
+    height: 35px;
+}

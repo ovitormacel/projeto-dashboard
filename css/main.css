@@ -56,7 +56,6 @@ body{
     font-size: 20px;
 }
 
-
 /* Dashboard Main */
 
 .dashboard_main{
@@ -287,7 +286,7 @@ body{
 .table_vendas th:nth-child(1){
     border-radius: 10px 0 0 0;
 }
-.table_vendas th:nth-child(4){
+.table_vendas th:nth-child(-1){
     border-radius: 0 10px 0 0;
 }
 

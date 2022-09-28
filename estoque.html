@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Estoque</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/estoque.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="align">
+            <a href="index.html" class="logo"><h3>Painel</h3></a>
+
+            <nav class="header_nav_list">
+                <ul>
+                    <li><a href="index.html"><i class="fa-solid fa-chart-line"></i><p>Dashboard</p></a></li>
+                    <li><a href="estoque.html" class="active"><i class="fa-solid fa-warehouse"></i><p>Estoque</p></a></li>
+                    <li><a href="#"><i class="fa-solid fa-piggy-bank"></i><p>Abrir Venda</p></a></li>
+                    <li><a href="#"><i class="fa-solid fa-user"></i><p>Clientes</p></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="dashboard_main">
+        <h4>Estoque</h4>
+
+        <section class="cards_info">
+            <article class="card money">
+                <span class="card_icon"><i class="fa-solid fa-dollar-sign"></i></span>
+                <div class="card_infos">
+                    <p>Lucro Total</p>
+                    <h4>$ 53,520.00</h4>
+                </div>
+            </article>
+
+            <article class="card inventory">
+                <span class="card_icon"><i class="fa-solid fa-warehouse"></i></span>
+                <div class="card_infos">
+                    <p>Itens em Estoque</p>
+                    <h4>340</h4>
+                </div>
+            </article>
+        </section>
+
+        <section class="table">
+            <h4>Itens em Estoque</h4>
+            <div class="table_vendas"> 
+                <table>
+                    <thead>
+                        <th>Cod.</th>
+                        <th>Descrição</th>
+                        <th>Qntd.</th>
+                        <th>Preço</th>
+                        <th></th>
+                        <th><button class="btn_create" id="open_create"><i class="fa-solid fa-plus"></i></button></th>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>001</td>
+                            <td>Camiseta Green Day</td>
+                            <td>003</td>
+                            <td>R$ 75.00</td>
+                            <td><button class="btn_edit">Editar</button></td>
+                            <td><button class="btn_delete">Deletar</button></td>
+                        </tr>
+
+                        
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <div class="additem">
+        <div class="additem_box">
+            <h4>Adicionar Novo Item</h4>
+            <div id="additem_form" class="additem_form">
+                <label for="code">Código</label><input type="number" name="cod" class="cod input" placeholder="Código">
+                <label for="description">Descrição</label><input type="text" name="descricao" class="descricao input" placeholder="Descrição">
+                <label for="qntd">Quantidade</label><input type="number" name="qntd" class="qntd input" placeholder="Quantidade">
+                <label for="preco">Preço</label><input type="number" name="preco" class="preco input" placeholder="Preço">
+                <button class="btn_create" id="cadastrarItem"><i class="fa-solid fa-plus"></i> Adicionar</button>
+                <button class="btn_close">Close</button>
+            </div>
+        </div>        
+    </div>
+
+    <script src="js/controller/EstoqueController.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://kit.fontawesome.com/3bb5c1e371.js" crossorigin="anonymous"></script>
+    
+</body>
+</html>
