@@ -46,7 +46,7 @@
                 <span class="card_icon"><i class="fa-solid fa-warehouse"></i></span>
                 <div class="card_infos">
                     <p>Itens em Estoque</p>
-                    <h4>340</h4>
+                    <h4 id="card_estoque_qntd">340</h4>
                 </div>
             </article>
         </section>
@@ -64,17 +64,10 @@
                         <th><button class="btn_create" id="open_create"><i class="fa-solid fa-plus"></i></button></th>
                     </thead>
 
-                    <tbody>
-                        <tr>
-                            <td>001</td>
-                            <td>Camiseta Green Day</td>
-                            <td>003</td>
-                            <td>R$ 75.00</td>
-                            <td><button class="btn_edit">Editar</button></td>
-                            <td><button class="btn_delete">Deletar</button></td>
-                        </tr>
-
+                    <tbody id="table_estoque">
                         
+
+                         
                     </tbody>
                 </table>
             </div>
@@ -83,7 +76,7 @@
 
     <div class="additem">
         <div class="additem_box">
-            <h4>Adicionar Novo Item</h4>
+            <h4 class="additem_box_h4">Adicionar Novo Item</h4>
             <div id="additem_form" class="additem_form">
                 <label for="code">Código</label><input type="number" name="cod" class="cod input" placeholder="Código">
                 <label for="description">Descrição</label><input type="text" name="descricao" class="descricao input" placeholder="Descrição">
